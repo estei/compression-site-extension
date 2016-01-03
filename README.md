@@ -1,10 +1,12 @@
 # Compression Site Extension
 
+**Use At Your Own Risk**
+
 A site extension for Azure Web Apps that allows you to configure [http compression](https://www.iis.net/configreference/system.webserver/httpcompression) settings via AppSettings.
 
 Works by changing the ApplicationHost.config file for the website.
 
-**NOTE: HERE BE DRAGONS!**
+**! HERE BE DRAGONS !**
 
 This extension can cause quite a bit of trouble if you configure it wrong, so please read this carefully before installing.
 
@@ -64,6 +66,8 @@ Value should be an integer between 0 and 10.
 Go the kudu (SCM) site and go the `Site Extensions` section.    
 Your gallery should now show the CompressionSettings extension.    
 Click the install button, and if you have the above AppSettings you should be running with better compression.
+
+Note: Since this extension can do so much harm, the `install.cmd` will try its best to make sure that you don't break the site on install, so make sure you have the AppSettings set up.
 
 ## Alternative installation method (ARM)
 
