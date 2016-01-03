@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>CompressionSettings</id>
+    <version>0.0.0</version>
+    <authors>Rasmus Lauridsen</authors>
+    <licenseUrl>https://raw.githubusercontent.com/estei/compression-site-extension/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/estei/compression-site-extension</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+        *Please read the README at the project site before installing.*
+        Allows you to set the Static and Dynamic compression levels and how many times a file should be accessed before compression.        
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright 2016 Rasmus Lauridsen</copyright>
+    <tags>compression httpcompression dynamicCompressionLevel staticCompressionLevel</tags>
+  </metadata>
+  <files>
+    <file src="src\**\*.*" target="content" />
+  </files>
+</package>
