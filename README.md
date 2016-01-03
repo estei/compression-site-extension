@@ -1,12 +1,14 @@
 # Compression Site Extension
 
-A site extension for Azure Web Apps that allows you to configure http compression settings via AppSettings.
+A site extension for Azure Web Apps that allows you to configure [http compression](https://www.iis.net/configreference/system.webserver/httpcompression) settings via AppSettings.
 
 Works by changing the ApplicationHost.config file for the website.
 
-**NOTE Here be dragons**
+**NOTE: HERE BE DRAGONS!**
 
 This extension can cause quite a bit of trouble if you configure it wrong, so please read this carefully before installing.
+
+There is no validation of the settings post install, so if you were to for instance remove one of the AppSetting values you could end up with a broken site or SCM site.
 
 ## Installation
 
